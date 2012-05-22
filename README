@@ -1,0 +1,17 @@
+WAY2SMS GUI
+
+A GUI to send sms through WAY2SMS.
+
+For Python2.7
+
+Libraries used are
+-gtk
+-urllib2
+
+The code works for direct connection.
+
+To set proxy use the follwoing code(add the code before urllib2.open() function)
+
+proxy = urllib2.ProxyHandler({'http':'http://username:password@proxy:port','https':'https://username:password@proxy:port'})
+opener = urllib2.build_opener(proxy)
+urllib2.install_opener(opener)		
