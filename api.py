@@ -116,11 +116,7 @@ class gui:
 			print i
 			details='uid='+str(self.username.get_text())+'&pwd='+str(self.password.get_text())+'&phone='+str(i)+'&msg='+str(self.msg.get_text())+'&codes=1'+'&provider=way2sms'
 		
-			#proxy = urllib2.ProxyHandler({'http':'http://username:password@1proxy:port','https':'https://f2011138:asd@10.1.9.31:8080'})
-			#proxy=urllib2.ProxyHandler({'http':'http://10.1.1.25:8090','https':'https://10.1.1.26:8090'})
-			#opener = urllib2.build_opener(proxy)
-			#urllib2.install_opener(opener)		
-			#print base_url+details	
+				
 			data=urllib2.urlopen(base_url+details)
 			print data.read()
 	
