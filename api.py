@@ -102,13 +102,13 @@ class gui:
 		self.send.show()
 		self.send.connect("clicked",self.get_numbers)
 	
-	
+	'''Function to get numbers'''
 	def get_numbers(self,Widget=None,Data=None):
 		self.numbers=(self.to.get_text()).split(',')
 		print self.numbers
 		self.send_msg()
 		
-	'''Funtion to send message'''
+	'''Function to send message'''
 	def send_msg(self,Widget=None,Data=None):
 		base_url='http://ubaid.tk/sms/sms.aspx?'
 		
